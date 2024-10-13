@@ -37,8 +37,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <TodoList todos={this.state.todos} />
-        <Form />
+        <TodoList todos={this.state.todos} toggleCompletion={this.toggleCompletion} />
+        <Form addTodo={this.addTodo} />
       </div>
     )
   }
